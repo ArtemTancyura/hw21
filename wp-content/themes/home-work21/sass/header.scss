@@ -1,0 +1,65 @@
+.site-header{
+  background-color: #111111;
+  background-size: cover;
+
+  .site-logo{
+    float: left;
+    padding: 25px 0;
+  }
+  .site-nav{
+    ul{
+      margin: 0;
+      padding-bottom: 30px;
+      padding-top: 10px;
+      background: #ffd500;
+
+      li {
+        list-style: none;
+        float: left;
+        margin: 0;
+
+        a {
+          display: block;
+          padding: 5px 18px;
+          text-decoration: none;
+          color: black;
+          font-size: 11px;
+        }
+        a:hover,
+        a:active{
+          background: white;
+        }
+      }
+     }
+    .site-nav ul:before, .site-nav ul:after{ content:""; display: table;}
+    .site-nav ul:after{ clear: both;}
+    .site-nav ul {*zoom: 1;}
+  }
+  #searchform{
+    padding-left: 840px;
+    padding-top: 25px;
+
+    #search{
+      background: #2c2c2b;
+      border: 1px solid #5f5f5d;
+      color: #5f5f5d;
+      padding: 5px;
+      font-size: 14px;
+      position: absolute;
+    }
+    #searchsubmit{
+      position: relative;
+      left: 120px;
+      top: 4px;
+      padding-left: 45px;
+      background: #2c2c2b;
+      border: none;
+      border-left: 1px solid #5f5f5d;
+      background: url("img/search-icon.png") no-repeat 100%;
+      background-position-x: 20px;
+      background-position-y: 0.5px;
+    }
+  }
+
+}
+

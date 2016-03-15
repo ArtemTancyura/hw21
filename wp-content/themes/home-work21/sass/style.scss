@@ -1,0 +1,333 @@
+/*
+Theme Name: Home Work 20
+Author: Artem Tancyura
+Description: The 2014 simplest theme for WordPress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black
+Text Domain: simplest-site
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "footer";
+@import "header";
+
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+  .site-nav li{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  img{
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 481px){
+  .site-nav li{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  img{
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 1024px) {
+
+  img{
+    max-width: 100%;
+  }
+}
+
+body{
+  font-family: 'Proximanova', sans-serif;
+  font-size: 14px;
+  color: #333;
+
+  h2{
+    font-family: 'Nexabold', serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+}
+.container {
+  max-width: 1025px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .main-part{
+    width: 68%;
+    float: left;
+
+    a{
+      text-decoration: none;
+    }
+    .slider{
+      padding: 5px;
+      padding-top: 20px;
+    }
+    .latest-blog-post{
+      text-align: left;
+      padding: 35px;
+      background: url("img/background.png") no-repeat left 100%;
+      color: white;
+      margin-bottom: -30px;
+    }
+
+    h2, .stats{
+      text-align: left;
+      font-size: 18px;
+      padding-left: 80px;
+    }
+    article {
+      padding-top: 50px;
+      border-bottom: 5px solid #e7e7e7;
+
+      h2{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      p {
+        padding-left: 80px;
+      }
+      img {
+        max-width: 100%;
+      }
+      ul{
+        .stats{
+          display: inline;
+          background: #ecebeb;
+          font-size: 5px;
+          width: 80px;
+          padding: 6px;
+          margin-left: 40px;
+
+          a {
+            text-decoration: none;
+            font-size: 12px;
+            padding: 15px;
+            color: black;
+            font-weight: bold;
+          }
+          a:hover{
+            color: #787875;
+          }
+        }
+      }
+      .post-info{
+        background: #c3c3c3;
+        padding: 10px;
+        width: 50px;
+        box-shadow: 0 0 0 1px #fff, 0 0 0 6px #c3c3c3;
+
+        .day{
+          font-size: 36px;
+          font-weight: bold;
+        }
+        .month{
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+    .more-link {
+      position: relative;
+      display: inline-block;
+      color: black;
+      background: #ffd500;
+      margin-top: 10px;
+      text-decoration: none;
+      padding: 10px;
+      padding-right: 40px;
+    }
+    .more-link:hover {
+      color: white;
+    }
+    .more-link:after {
+      content: '';
+      background: url("img/caret-right.png") no-repeat 100%;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      left: 155px;
+      top: 4px;
+    }
+    .content{
+      border-bottom: 1px solid #999999;
+    }
+  }
+  .sidebar{
+    float: right;
+    width: 31%;
+  }
+
+}
+.pagin{
+  padding-left: 595px;
+}
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  color: #878787;
+  text-decoration:none;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  background-color: #e7e7e7;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+  background-color: #464646;
+  color: white;
+}
+/* Contact Form 7 Styles
+---------------------------------*/
+.wpcf7{
+  background: #fdfdfd;
+
+  input{
+    width: 21em;
+    padding: 10px;
+    background: #e2e2e2;
+    color: #7f7c7c;
+  }
+  textarea{
+    width: 70%;
+    background: #e2e2e2;
+    color: #7f7c7c;
+  }
+  form{
+    padding: 15px;
+  }
+  input[type="submit"]{
+    width: 10em;
+    position: relative;
+    display: inline-block;
+    color: black;
+    background: #ffd500;
+    text-decoration: none;
+    padding: 10px;
+  }
+  input[type="submit"]:hover {
+    color: white;
+  }
+  input[type="submit"]:after {
+    content: '';
+    background: url("../img/caret-right.png") no-repeat 100%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 110px;
+    top: 4px;
+  }
+}
+
+
+/* resent posts widget */
+.most-popular-item{
+  li{
+    list-style-type: none;
+    padding: 5px;
+    padding-right: 25px;
+    color: black;
+
+    a{
+      font-size: 12px;
+      font-weight: bold;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+      color: black;
+      box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    a:hover{
+      background: #ffd500;
+    }
+  }
+}
+.most-popular-title{
+  font-size: 16px;
+  color: white;
+  padding: 15px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  background: url("img/background-small.png") no-repeat 100%;
+}
+
+//categories widget
+
+.categories-title{
+  font-size: 16px;
+  color: #454545;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.categories-item{
+  li{
+    list-style-type: none;
+    width: 90%;
+    padding: 5px;
+
+    a{
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+      box-shadow: 0 0 5px rgba(0,0,0,0.5);
+      background: #454545;
+      color: #b6b6b6;
+    }
+    a:hover{
+      background: #ffd500;
+      color: #222222;
+    }
+  }
+}
+
+//banner 300x250
+.banner-item{
+  padding-left: 22px;
+}
+.alignright{
+  float: right;
+}
+/* CONTACT PAGE */
+
+.main-contact{
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 50px;
+
+  h2{
+    font-size: 36px;
+  }
+}
+
+
+
+
+
